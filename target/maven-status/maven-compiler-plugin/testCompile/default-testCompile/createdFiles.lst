@@ -1,0 +1,16 @@
+org\example\StepDefinitions\SD03_CurrencyStepDefinition.class
+org\example\StepDefinitions\SD08_Add_product_WishList_StepDefinition.class
+org\example\Pages\ShoppingCartPage.class
+org\example\StepDefinitions\SD01_RegistrationStepsDefinition.class
+org\example\StepDefinitions\SD09_Add_products_ShoppingCart_StepDefinition.class
+org\example\Pages\ProductDetailsPage.class
+org\example\Pages\RegistrationPage.class
+org\example\runners\TestRunner.class
+org\example\StepDefinitions\SD02_LoginStepDefinition.class
+org\example\StepDefinitions\SD04_CategoryStepDefinition.class
+org\example\Pages\HomePage.class
+org\example\StepDefinitions\SD07_FollowUsStepDefinition.class
+org\example\StepDefinitions\Hooks.class
+org\example\StepDefinitions\SD06_Slider_StepDefinition.class
+org\example\Pages\LoginPage.class
+org\example\StepDefinitions\SD05_Search_productStepDefinition.class

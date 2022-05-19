@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="190.726">
+<testcase classname="user should be able to register on the system" name="user Register with valid data" time="19.212">
+<system-out><![CDATA[Given navigate to Register URL..............................................passed
+When user enter "female" and "Reham" and "Ibrahim" and "5" and "2" and "2016" and "test2@gmail.com" and "123456" and "123456".passed
+And enter on Register button................................................passed
+Then user could Register successfully.......................................passed
+And user click on Continue button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to login to the system" name="user login with valid email and password" time="10.894">
+<system-out><![CDATA[Given navigate to login URL.................................................passed
+When enter "test2@gmail.com" and "123456"...................................passed
+Then user could login successfully..........................................passed
+And user go to home page....................................................passed
+And user click on Log out Link..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest could switch between currencies" name="Guest change currency from US-Dollar to Euro" time="12.289">
+<system-out><![CDATA[Given Click on currency dropdown............................................passed
+Then select Euro from currency..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest could able to hover and select diff category" name="user  hover on Computers menu and click on Desktops sub_menu" time="14.379">
+<system-out><![CDATA[Given hover on Computers main menu and click on Desktops....................passed
+Then confirm that header title contain text Desktops........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to search on product by Name or SKU" name="search on product by Name" time="17.793">
+<system-out><![CDATA[Given insert "shirt" in search textbox......................................passed
+Then click on first item in the result if exist.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to search on product by Name or SKU" name="search on product by SKU" time="18.701">
+<system-out><![CDATA[Given insert "AD_C80_RS" in search textbox..................................passed
+Then click on first item in the result if exist.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest could able to click on two Sliders on Homepage" name="Click on Iphone Slider" time="9.696">
+<failure message="expected:&lt;...emo.nopcommerce.com/[Ipone_s6]&gt; but was:&lt;...emo.nopcommerce.com/[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given click on first slider in home page....................................passed
+Then confirm the slider redirect to iphone product page.....................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[Ipone_s6]> but was:<...emo.nopcommerce.com/[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.SD06_Slider_StepDefinition.first_slider_detailed_page_displayed(SD06_Slider_StepDefinition.java:26)
+	at ✽.confirm the slider redirect to iphone product page(file:///C:/Users/reham.ibrahim/IdeaProjects/Mavenseleniumcucumber/src/main/resources/Features/TC06_Slider.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="guest could able to click on two Sliders on Homepage" name="Click on Nokia Slider" time="13.914">
+<failure message="expected:&lt;...emo.nopcommerce.com/[nokia-lumia-1020]&gt; but was:&lt;...emo.nopcommerce.com/[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given click on second slider in home page...................................passed
+Then confirm the slider redirect to nokia page..............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[nokia-lumia-1020]> but was:<...emo.nopcommerce.com/[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.SD06_Slider_StepDefinition.second_slider_detailed_page_displayed(SD06_Slider_StepDefinition.java:45)
+	at ✽.confirm the slider redirect to nokia page(file:///C:/Users/reham.ibrahim/IdeaProjects/Mavenseleniumcucumber/src/main/resources/Features/TC06_Slider.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="confirm follow us links open the corresponding websites" name="guest open facebook link in the follow us section and confirm open the correct website in new tab" time="7.658">
+<system-out><![CDATA[Given Click on facebook link in follow us section...........................passed
+Then confirm URL contain facebook in new tab correctly......................passed
+]]></system-out>
+</testcase>
+<testcase classname="confirm follow us links open the corresponding websites" name="guest open youtube link in the follow us section and confirm open the correct website in new tab" time="10.556">
+<system-out><![CDATA[Given Click on youtube link in follow us section............................passed
+Then confirm URL contain youtube in new tab correctly.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="confirm follow us links open the corresponding websites" name="guest open twitter link in the follow us section and confirm open the correct website in new tab" time="7.917">
+<system-out><![CDATA[Given Click on twitter link in follow us section............................passed
+Then confirm URL contain twitter in new tab correctly.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="confirm follow us links open the corresponding websites" name="guest open RSS link in the follow us section and confirm open the correct website" time="6.979">
+<system-out><![CDATA[Given Click on RSS link in follow us section................................passed
+Then confirm URL contain RSS................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest could able to add products to wishlist" name="add products to wishlist" time="20.25">
+<system-out><![CDATA[Given hover on Computers main menu and click on Desktops....................passed
+When Add products to WishList...............................................passed
+Then Success message displayed..............................................passed
+And Confirm quantity of products in the wishlist link in header more than zero.passed
+]]></system-out>
+</testcase>
+<testcase classname="guest could able to add products to shopping cart" name="add products to shopping cart" time="19.62">
+<system-out><![CDATA[Given hover on Computers main menu and click on Desktops....................passed
+When Add products to shopping cart..........................................passed
+Then Add to cart confirmation message displayed.............................passed
+And get quantity of products in shopping cart link in header................passed
+]]></system-out>
+</testcase>
+</testsuite>
